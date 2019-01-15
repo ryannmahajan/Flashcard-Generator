@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">AnkiMate</string>
+    <string name="use_same_tags_checkbox_text">Use Evernote tags to save in Anki</string>
+    <string name="tags_to_fetch_text">Tags to fetch</string>
+    <string name="tags_to_save_with">Tags to save with</string>
+    <string name="deck">Deck</string>
+    <string name="type">Type</string>
+    <string name="show_field_keywords">Show field keywords</string>
+    <string name="hide_field_keywords">Hide field keywords</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="import_text">Import</string>
+    <string name="provide_name_title">Please provide a name for the configuration</string>
+    <string name="enable_service">Enable service</string>
+    <string name="enable_media_entry_title">Enable media entry</string>
+    <string name="sync_interval_title">Sync interval</string>
+    <string name="use_wifi_only_title">Use Wifi only</string>
+    <string name="connect_to_evernote">Connect Evernote</string>
+    <string name="connect_to_trello">Connect to Trello</string>
+    <string name="already_logged_in">Already logged in</string>
+    <string name="add">Add</string>
+    <string name="are_you_sure_logout">Are you sure you want to logout?</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="clone">Clone</string>
+    <string name="switch_text">Switch</string>
+    <string name="name">Name</string>
+    <string name="untitled_configuration">Untitled configuration</string>
+    <string name="separator_preference_title">Separator text</string>
+    <string name="separator_preference_summary">Sets the text to search for after the field keywords</string>
+    <string name="refresh_tags">Refresh tags</string>
+    <string name="confirm">Confirm</string>
+    <string name="copy">copy</string>
+    <string name="cant_be_empty">Empty</string>
+    <string name="clear_lose_input_dialog_text">Clear and lose current input?</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="invalid_deck">Please recheck deck for %1$s</string>
+    <string name="invalid_model">Please recheck model for %1$s</string>
+    <string name="invalid_fields">Please recheck fields for %1$s</string>
+    <string name="added_cards">Added notes</string>
+    <string name="duplicate">Duplicate keyword</string>
+    <string name="field_keywords">Field keywords</string>
+    <string name="tutorial_dialog_message">Would you like to see a tutorial about AnkiMate?</string>
+    <string name="title_configuration_list">List&lt;Configuration></string>
+    <string name="title_configuration_detail">Configuration Detail</string>
+    <string name="sync_now">Sync now</string>
+    <string name="select_notebook">Select notebook</string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="notes_to_add">Notes to add</string>
+    <string name="add_later_preference_title">\"Add later\" keyword</string>
+    <string name="add_later_pref_summary">If written before field keywords, the note can be considered later in the app</string>
+    <string name="add_later_default">//</string>
+    <string name="delete_confirmation">Are you sure you want to delete the configuration : %1$s</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="configurations">Configurations</string>
+    <string name="feedback">Feedback</string>
+    <string name="evernote_restriction_15">Evernote does not allow syncing more frequent than 15 minutes. Try again in %1$s minutes </string>
+    <string name="refresh_cards_added_screen">Refresh Cards Added only</string>
+    <string name="no_new_anki_note_found">No new Anki tagged note was found</string>
+    <string name="sign_in" >Sign-in to make configurations</string>
+    <string name="bookmark">// Synced with Anki</string>
+    <string name="bookmark_style">color: rgb(192, 192, 192);</string>
+    <string name="sync_error">Error occurred while syncing. Notes will sync once it is resolved.</string>
+    <string name="auth_expired">AnkiMate\'s authoization to Evernote has expired. Log in to restore functionality.</string>
+    <string name="rate_limit_explain">"Evernote server accepts only a limited number of requests from each user per hour. As this limit has been reached, sync will occur in "</string>
+    <string name="anki_not_found">AnkiDroid not found</string>
+    <string name="anki_reqd_configs"><![CDATA[AnkiDroid is required to create configurations. Please install it from here : https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en]]></string>
+    <string name="dev_email">ryannmahajan@gmail.com</string>
+    <string name="ankimate_feedback">AnkiMate feedback</string>
+    <string name="choose_email_client">Choose an Email client :</string>
+    <string name="sync_successful">Sync successful</string>
+    <string name="notes_already_synced">All notes have already been synced</string>
+    <string name="disconnect_to_evernote">Disconnect evernote</string>
+    <string name="done">Done</string>
+    <string name="network_unavailable">Network unavailable</string>
+    <string name="no_configs_to_sync">No configurations to sync with</string>
+    <string name="quota_reached">Evernote limits the data that each user can upload to their account every month. This limit will reset in %1$s. AnkiMate won\'t be able to properly function till then unless current quota is increased. </string>
+    <string name="click_here_to_do_that">Click here to do that. </string>
+    <string name="permission_required">Permission required</string>
+    <string name="access_to_anki_database_not_granted_click_here">Access to AnkiDroid database hasn\'t been granted. Click here to grant permission</string>
+    <string name="error_while_loading_decks">An error occurred while loading decks. Please ensure that at least one deck exists</string>
+    <string name="error_while_loading_models">An error occurred while loading types. Please ensure that at least one note type exists</string>
+    <bool name="is_tablet">false</bool>
+</resources>

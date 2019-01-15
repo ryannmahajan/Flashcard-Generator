@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference android:title="@string/enable_service"
+                        android:key="@string/enable_service"
+                        android:defaultValue="false"/>
+
+    <ListPreference android:title="@string/sync_interval_title"
+        android:entries="@array/sync_interval_options"
+        android:entryValues="@array/sync_interval_values_milliseconds"
+        android:key="@string/sync_interval_title"
+        android:defaultValue="10800000"/>
+
+    <CheckBoxPreference android:title="@string/use_wifi_only_title"
+        android:defaultValue="true"
+        android:key="@string/use_wifi_only_title"/>
+
+    <!-- Commenting this out for now
+    <CheckBoxPreference android:title="@string/enable_media_entry_title"
+                        android:summaryOff="Images and sounds are ignored. This saves data and loading time."
+                        android:summaryOn="Images and sounds are also saved to flashcards"
+                        android:key="@string/enable_media_entry_title"
+                        android:defaultValue="false"/> -->
+
+    <!-- Commenting out because you would have to maintain a list of all the changes to these,
+    so that blacklist can be made even with the previous vals
+    <EditTextPreference android:title="@string/add_later_preference_title"
+                        android:summary="@string/add_later_pref_summary"
+                        android:key="@string/add_later_preference_title"
+                        android:defaultValue="@string/add_later_default"/>
+
+    <EditTextPreference android:title="@string/separator_preference_title"
+                        android:summary="@string/separator_preference_summary"
+                        android:key="@string/separator_preference_title"
+                        android:defaultValue=":"/> -->
+
+    <Preference android:title="@string/connect_to_evernote"
+                android:key="@string/connect_to_evernote"/>
+
+</PreferenceScreen>

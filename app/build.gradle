@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    signingConfigs {
+        first {
+            keyAlias 'key1'
+            keyPassword 'magician711'
+            storeFile file('D:/androidstudio/keystore/first.jks')
+            storePassword 'magician711'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        applicationId "com.ryannm.android.autoanki"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 27
+        versionName "2.7"
+        signingConfig signingConfigs.first
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.first
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.first
+        }
+    }
+    productFlavors {
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        classpath 'io.fabric.tools:gradle:1.22.2'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.evernote:android-sdk:2.0.0-RC3'
+    compile 'org.jsoup:jsoup:1.9.1'
+    compile 'org.greenrobot:greendao:2.2.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.splitwise:tokenautocomplete:2.0.7'
+    compile 'com.ichi2.anki:api:1.1.0alpha5'
+    compile 'com.evernote:android-job:1.0.8'
+    compile 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.0.4'
+    compile('com.mikepenz:materialdrawer:5.5.0@aar') {
+        transitive = true
+    }
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+}
